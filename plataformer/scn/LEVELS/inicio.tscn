@@ -1,0 +1,68 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://scn/LEVELS/inicio.gd" type="Script" id=1]
+[ext_resource path="res://scn/LEVELS/Level1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/background.png" type="Texture" id=3]
+[ext_resource path="res://music/Lost Frequencies - Siente Me (feat. Calavera & Manya).ogg" type="AudioStream" id=4]
+[ext_resource path="res://assets/png/menu/play.png" type="Texture" id=5]
+[ext_resource path="res://assets/png/btn/sound_off.png" type="Texture" id=6]
+[ext_resource path="res://assets/png/btn/close.png" type="Texture" id=7]
+[ext_resource path="res://assets/png/btn/sound.png" type="Texture" id=8]
+[ext_resource path="res://assets/font_title.tres" type="DynamicFont" id=9]
+
+[node name="inicio" type="Node2D"]
+script = ExtResource( 1 )
+scn_game = ExtResource( 2 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color( 0.862745, 0.101961, 0.101961, 1 )
+self_modulate = Color( 1, 0, 0.937255, 1 )
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 3 )
+
+[node name="tema" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
+
+[node name="inicioboton" type="TextureButton" parent="."]
+margin_left = 691.0
+margin_top = 440.0
+margin_right = 1189.0
+margin_bottom = 940.0
+texture_normal = ExtResource( 5 )
+
+[node name="pausaboton" type="TextureButton" parent="."]
+margin_left = 1316.0
+margin_right = 1530.0
+margin_bottom = 215.0
+texture_normal = ExtResource( 6 )
+
+[node name="cierreboton" type="TextureButton" parent="."]
+margin_right = 214.0
+margin_bottom = 215.0
+texture_normal = ExtResource( 7 )
+
+[node name="returnboton" type="TextureButton" parent="."]
+margin_left = 1621.0
+margin_right = 1835.0
+margin_bottom = 215.0
+texture_normal = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 586.0
+margin_top = 258.0
+margin_right = 1323.0
+margin_bottom = 440.0
+custom_fonts/font = ExtResource( 9 )
+custom_colors/font_color = Color( 0.219608, 1, 0, 1 )
+text = "Platformer"
+align = 1
+valign = 1
+uppercase = true
+[connection signal="pressed" from="inicioboton" to="." method="_on_inicioboton_pressed"]
+[connection signal="pressed" from="pausaboton" to="." method="_on_pausaboton_pressed"]
+[connection signal="pressed" from="cierreboton" to="." method="_on_pausaboton_pressed"]
+[connection signal="pressed" from="cierreboton" to="." method="_on_cierreboton_pressed"]
+[connection signal="pressed" from="cierreboton" to="." method="_on_pausaboton2_pressed"]
+[connection signal="pressed" from="returnboton" to="." method="_on_returnboton_pressed"]

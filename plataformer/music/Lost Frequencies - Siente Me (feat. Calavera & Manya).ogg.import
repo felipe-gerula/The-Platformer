@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Lost Frequencies - Siente Me (feat. Calavera & Manya).ogg-d6bebe47d04a0e94a1cb5cc41bdda0a7.oggstr"
+
+[deps]
+
+source_file="res://music/Lost Frequencies - Siente Me (feat. Calavera & Manya).ogg"
+dest_files=[ "res://.import/Lost Frequencies - Siente Me (feat. Calavera & Manya).ogg-d6bebe47d04a0e94a1cb5cc41bdda0a7.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Lost Frequencies - Paninaro (Official Music Video).ogg-4231d698873fd89f8db063f38182c66e.oggstr"
+
+[deps]
+
+source_file="res://music/Lost Frequencies - Paninaro (Official Music Video).ogg"
+dest_files=[ "res://.import/Lost Frequencies - Paninaro (Official Music Video).ogg-4231d698873fd89f8db063f38182c66e.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
